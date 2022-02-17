@@ -1,0 +1,247 @@
+
+:root{
+    --vermelho:red;
+    --preta:black;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+   background: var(--preta);
+   font-family: 'Arial', Times, serif;
+   color:white; 
+}
+
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: "Arial Black", Times;
+    font-size: 40px;
+
+/*elementos base*/
+
+}
+
+header nav a{
+    text-decoration: none;
+    color:#aaa;
+    margin-right: 10px;
+
+
+}
+
+
+header nav a:hover{
+    color:#fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa-house.jpg');
+
+    height: 480px;
+    background-size:cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    }
+
+    .filme-principal .descricao{
+        margin-top: 10px;
+        margin-bottom: 40px;
+    
+    }
+
+    .filme-principal .titulo{
+        margin-top: 200px;
+        font-size: 50px;
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+    }
+
+    .botao{
+        background-color: rgba(0,0,0,.50);
+        border: none;
+        color: white;
+
+        padding:15px 30px;
+        margin-right: 15px;
+        font-size: 12px;
+
+        cursor: pointer;
+        transition: .3s ease all;
+
+    }
+
+    .botao:hover{
+        background-color: white;
+        color:black;
+    }
+
+    .botao i{
+         margin-right: 10px;
+    }
+
+
+
+    .container{
+        margin-left: 20px;
+
+    }
+
+
+    .filme-principal .container{
+        width: 70%
+    }
+
+
+    .box-filme{
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+
+
+    .carrousel-filmes{
+        margin-top: 5px;
+    }
+
+
+    .bg-footer{
+        background-color: black;
+        color: #fff;
+        padding-top: 50px;
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Arial', Times, serif;
+        margin: 30px;
+        
+    }
+
+    /* Segunda pagina, primeira seção*/
+    
+    .player{
+        background-color: rgb(97, 238, 226);
+        display: flex;
+        position: fixed;
+        z-index: 0;
+    }
+
+    .player > iframe{
+        width: 100vw;
+        height: 80vh;
+
+    }
+
+    /* segunda seção*/
+    
+    .movie-info{
+        position: absolute;
+        z-index: 1;
+        background-image: linear-gradient(rgba(0,0,0,0,7), rgba(0,0,0,0,7));
+    }
+
+    .link{
+        color: inherit;
+        text-decoration: none;
+
+    }
+    
+    .informacao{
+        font-size: 16px;
+        background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa-info.jpg');
+
+        height: 800px;
+        background-size:cover;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    
+    
+    /* filme-secundário*/
+    .filme-secundario{
+        font-size: 16px;
+        background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img2/capa2.jpg');
+
+        height: 400px;
+        background-size:cover;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    
+    }
+
+    /*filme-terciario*/
+
+    .filme-terciario{
+        font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img3/capa-series.jpg');
+
+    height: 400px;
+    background-size:cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    }
+
+    .entrar-login{
+        font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/bg.jpg');
+
+    height: 800px;
+    background-size:cover;
+
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+    }
+
+    .form-cta{
+        display: grid;
+        grid-template-columns: 350px 150px;
+        margin-top: 20pX;
+              
+    }
+
+
+    .form-cta input{
+        padding: 10px 5px;
+        font-family: sans-serif;
+        border: none;
+        
+    }
+     
+    .form-cta button{
+        background-color: #e50914;
+        outline: none;
+        border: none;
+        color:white;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
